@@ -1,5 +1,5 @@
 <template>
-<!--    <p>{{ testDatas }}</p>-->
+    <p>{{ testDatas }}</p>
 </template>
 
 <script>
