@@ -1,5 +1,8 @@
 <template>
-    <p>{{ testDatas }}</p>
+<div>
+  home vue
+
+</div>
 </template>
 
 <script>

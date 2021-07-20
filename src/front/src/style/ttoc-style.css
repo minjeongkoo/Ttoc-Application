@@ -1,4 +1,26 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-* { font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
-body { font-family: 'Spoqa Han Sans Neo', 'sans-serif';}
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  color: #263238;
+}
+
+.ttoc-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ttoc-title span{
+  position: relative;
+}
+
+.ttoc-title .ttoc-border {
+  position: absolute;
+  width: 99%;
+  height: 40%;
+  background: #fff176;
+  bottom: 0px;
+}
