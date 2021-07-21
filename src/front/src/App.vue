@@ -16,7 +16,7 @@
         <left-menu/>
       </q-drawer>
 
-      <q-page-container>
+      <q-page-container class="ttoc-router-view">
         <router-view />
       </q-page-container>
 

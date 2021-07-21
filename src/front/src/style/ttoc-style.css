@@ -1,4 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 * { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
@@ -8,12 +9,17 @@ html, body, #q-app {
 
 body {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-  color: #263238;
+  color: #37474f;
+  letter-spacing: -0.25px;
 }
 
 .ttoc-header-title {
   font-weight: 600;
   letter-spacing: -0.2px;
+}
+
+.ttoc-router-view {
+  padding-top: 30px !important;
 }
 
 .ttoc-title {
@@ -35,7 +41,33 @@ body {
   bottom: 0px;
 }
 
+.ttoc-sub-headline {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ttoc-headline {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 .router-view-area {
   height: 100%;
   padding-top: 82px;
+}
+
+.q-btn {
+  padding: 8px 16px;
+  border-radius: 12px;
+  letter-spacing: -0.2px;
+}
+
+.text-h5 {
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
+.text-overline {
+  letter-spacing: 0;
 }
