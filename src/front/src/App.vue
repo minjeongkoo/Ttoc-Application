@@ -1,14 +1,45 @@
 <template>
-  <app-header/>
-  <router-view />
+    <q-layout view="hHh lpR fFf">
+
+      <!-- header -->
+      <q-header elevated class="bg-primary text-white">
+        <q-toolbar>
+          <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
+          <q-toolbar-title class="ttoc-header-title">
+            홈조리원 똑똑
+          </q-toolbar-title>
+        </q-toolbar>
+      </q-header>
+
+      <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
+        <!-- drawer content -->
+        <left-menu/>
+      </q-drawer>
+
+      <q-page-container>
+        <router-view />
+      </q-page-container>
+
+    </q-layout>
 </template>
 
 <script>
-import Header from "./components/Header";
+import LeftMenu from "components/LeftMenu";
+import { ref } from 'vue';
 
 export default {
+  setup () {
+    const leftDrawerOpen = ref(false)
+
+    return {
+      leftDrawerOpen,
+      toggleLeftDrawer () {
+        leftDrawerOpen.value = !leftDrawerOpen.value
+      }
+    }
+  },
   components: {
-    'app-header': Header
+    'left-menu': LeftMenu
   }
 }
 </script>
