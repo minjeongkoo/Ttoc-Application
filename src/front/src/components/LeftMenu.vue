@@ -53,7 +53,6 @@
         <q-separator />
 
         <!-- 공지, 설정 바로가기 -->
-
         <div class="ttoc-title">
           <span>
             <div class="ttoc-border"/>

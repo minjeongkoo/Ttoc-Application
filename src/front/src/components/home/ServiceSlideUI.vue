@@ -1,35 +1,45 @@
 <template>
-  <div>
-    <q-tabs
-      v-model="tab"
-      dense
-      outside-arrows
-      mobile-arrows
-      class="text-deep-purple-12"
-    >
-      <q-tab class="text-deep-purple-12" name="alarms" icon="mail" label="산전•산후 바디관리" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="alarm" label="산후돌봄" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="movie" label="홈 필라테스" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="mail" label="싱잉볼•명상" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="alarm" label="건강 식사 배송" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="movie" label="홈 클리닉" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="movie" label="딱 맞춤 서비스" />
-      <q-tab class="text-deep-purple-12" name="alarms" icon="movie" label="똑똑's Pick" />
-    </q-tabs>
+  <q-carousel
+    v-model="slide"
+    swipeable
+    animated
+    :control-type="controlType"
+    control-color="deep-purple"
+    navigation
+    padding
+    arrows
+    height="300px"
+    class="bg-deep-purple-1 text-deep-purple rounded-borders"
+  >
+    <q-carousel-slide name="style" class="column no-wrap flex-center">
+      <q-icon name="style" size="56px" />
+      <div class="q-mt-md text-center text-black">
+        <p class="text-h6">홈조리원 똑똑</p>
+        <p class="text-body2">{{ lorem }}</p>
+      </div>
+    </q-carousel-slide>
 
-    <!-- service by card -->
-    <q-card class="my-card">
-      <img src="https://cdn.quasar.dev/img/mountains.jpg">
-
-      <q-card-section>
-        <div class="text-h6">Our Changing Planet</div>
-        <div class="text-subtitle2">by John Doe</div>
-      </q-card-section>
-
-      <q-card-section class="q-pt-none">
-        {{ lorem }}
-      </q-card-section>
-    </q-card>
-
-  </div>
+  </q-carousel>
 </template>
+
+<script>
+import { ref } from 'vue'
+
+export default {
+  setup () {
+    return {
+      controlType: ref('flat'),
+      controlTypeOptions: [
+        { value: 'regular', label: 'regular' },
+        { value: 'unelevated', label: 'unelevated' },
+        { value: 'flat', label: 'flat (default)' },
+        { value: 'outline', label: 'outline' },
+        { value: 'push', label: 'push' }
+      ],
+
+      slide: ref('style'),
+      lorem: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque voluptatem totam, architecto cupiditate officia rerum, error dignissimos praesentium libero ab nemo.'
+    }
+  }
+}
+</script>

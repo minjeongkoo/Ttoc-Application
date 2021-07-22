@@ -1,22 +1,17 @@
 <template>
   <div class="home-vue-area">
-    <div class="hello-section">
+
+    <div class="hello-section bg-deep-purple-1">
       <div>
         <div>
+
+          <!-- Hello User -->
           <div style="height: 36px;"/>
-          <p class="head-copy">minjeong님의<br>똑똑 없는 하루가<br>7일이 지났습니다.</p>
-          <q-btn outline class="btn-check-me" :ripple="{ color: 'purple-6' }" color="white" text-color="#4F5B62" label="내 몸상태 체크하기 ✍️" no-caps />
+          <p class="head-copy">똑똑 없는 하루가<br>7일이 지났습니다.</p>
+          <p class="text-body2">MY POINT <b>20,000원</b></p>
+          <q-btn push color="primary" label="내 몸상태 체크해보기" v-on:click="$router.push({ path: 'dd' })"/>
           <div style="height: 36px;"/>
           <q-separator />
-
-          <div>
-            <div style="height: 36px;"/>
-            <p class="ttoc-sub-headline">똑똑 서비스 예약 현황</p>
-            <p class="ttoc-headline">민정님 안녕하세요!</p>
-            <div style="height: 16px;"/>
-            <!-- card list -->
-            <lasted-service-ui/>
-          </div>
 
         </div>
       </div>
@@ -24,9 +19,18 @@
 
     <q-page padding>
 
-      <div style="height: 36px;"/>
-      <p class="ttoc-sub-headline">ttoc ttoc</p>
-      <p class="ttoc-headline">서비스 둘러보기 👀</p>
+      <!-- My Lasted Reservation -->
+      <div>
+        <div style="height: 36px;"/>
+        <p class="ttoc-sub-headline">MY RESERVATION</p>
+        <p class="ttoc-headline">minjeong님 안녕하세요!</p>
+        <div style="height: 16px;"/>
+        <!-- Card List -->
+        <lasted-service-ui  style="text-align: left"/>
+      </div>
+
+      <p class="ttoc-sub-headline">똑똑</p>
+      <p class="ttoc-headline">홈조리원 둘러보기</p>
       <div style="height: 16px;"/>
 
       <service-slide-ui/>
@@ -67,33 +71,35 @@ export default {
 
 <style>
 .home-vue-area {
-  /*text-align: center;*/
+  text-align: center;
+}
+
+.home-vue-area .q-layout-padding {
+  padding: 16px;
 }
 
 .hello-section {
   margin-top: 0;
+  text-align: left;
 }
 
 .hello-section > div {
   width: 100%;
-  background-image: url("assets/img/bg_home_vue.png");
-  background-size: cover ;
-  background-repeat: no-repeat;
+  /*background-image: url("assets/img/bg_home_vue.png");*/
+  /*background-size: cover ;*/
+  /*background-repeat: no-repeat;*/
 }
 
 .hello-section > div > div {
   margin: 16px;
 }
 
-.hello-section .btn-check-me {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.head-copy {
-  font-size: 30px;
+.hello-section .head-copy {
+  text-align: left;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Nanum Myeongjo', serif;
+  margin-bottom: 100px;
 }
 
 .hello-section .my-card {

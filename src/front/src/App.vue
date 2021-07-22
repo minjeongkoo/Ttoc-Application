@@ -3,11 +3,14 @@
 
       <!-- header -->
       <q-header elevated class="bg-primary text-white">
-        <q-toolbar>
+        <q-toolbar class="ttoc-header-toolbar">
           <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-          <q-toolbar-title class="ttoc-header-title">
-            홈조리원 똑똑
-          </q-toolbar-title>
+          <div>
+            <img src="./assets/img/app-header-logo.svg" style="height: 30px; margin-top: 4px;">
+          </div>
+          <div>
+            <q-btn dense flat round icon="book_online"/>
+          </div>
         </q-toolbar>
       </q-header>
 
