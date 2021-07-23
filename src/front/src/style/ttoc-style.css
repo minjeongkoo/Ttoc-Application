@@ -9,8 +9,12 @@ html, body, #q-app {
 
 body {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-  color: #37474f;
   letter-spacing: -0.25px;
+  background: #FFF;
+}
+
+.ttoc-body {
+  color: #455a64;
 }
 
 .ttoc-header-toolbar {
@@ -19,7 +23,7 @@ body {
 }
 
 .ttoc-router-view {
-  padding-top: 30px !important;
+  padding-top: 70px !important;
 }
 
 .ttoc-title {
@@ -71,4 +75,11 @@ body {
 
 .text-overline {
   letter-spacing: 0;
+}
+
+/* typo */
+
+.text-h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }

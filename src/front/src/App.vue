@@ -1,15 +1,17 @@
 <template>
-    <q-layout view="hHh lpR fFf">
+    <q-layout view="hHh lpR fFf" class="ttoc-body">
 
       <!-- header -->
-      <q-header elevated class="bg-primary text-white">
+      <q-header bordered class="bg-white text-black">
         <q-toolbar class="ttoc-header-toolbar">
-          <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-          <div>
-            <img src="./assets/img/app-header-logo.svg" style="height: 30px; margin-top: 4px;">
+          <div style="width: 33%; text-align: left;">
+            <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
           </div>
-          <div>
-            <q-btn dense flat round icon="book_online"/>
+          <div style="width: 33%; text-align: center;">
+            <img src="./assets/img/app-header-logo.svg" style="height: 26px; margin-top: 5px;">
+          </div>
+          <div style="width: 33%; text-align: right">
+            <q-btn flat dense class="bg-blue-grey-1 text-blue-grey-8 btn-reservation" size="16px" label="예약하기"/>
           </div>
         </q-toolbar>
       </q-header>
@@ -46,6 +48,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.btn-reservation {
+  padding: 5px 10px 5px 10px;
+}
+</style>
 
 <!--Common CSS-->
 <style src="../src/style/ttoc-style.css" type="text/css"/>
