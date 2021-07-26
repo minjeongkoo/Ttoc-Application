@@ -1,0 +1,85 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+html, body, #q-app {
+  height: 100%;
+}
+
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  letter-spacing: -0.25px;
+  background: #FFF;
+}
+
+.ttoc-body {
+  color: #455a64;
+}
+
+.ttoc-header-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ttoc-router-view {
+  padding-top: 70px !important;
+}
+
+.ttoc-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ttoc-title span{
+  position: relative;
+}
+
+.ttoc-title .ttoc-border {
+  position: absolute;
+  width: 99%;
+  height: 40%;
+  background: #fff176;
+  bottom: 0px;
+}
+
+.ttoc-sub-headline {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  opacity: 0.7;
+}
+
+.ttoc-headline {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.router-view-area {
+  height: 100%;
+  padding-top: 82px;
+}
+
+.q-btn {
+  padding: 8px 16px;
+  border-radius: 12px;
+  letter-spacing: -0.2px;
+}
+
+.text-h5 {
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
+.text-overline {
+  letter-spacing: 0;
+}
+
+/* typo */
+
+.text-h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
