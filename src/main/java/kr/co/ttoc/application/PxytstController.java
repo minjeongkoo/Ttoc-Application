@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class PxytstController {
     @GetMapping("/api/pxytst")
     public String test() {
-        return  "ttoc ttoc";
+        return  "dev full";
     }
 }
