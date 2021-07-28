@@ -1,6 +1,6 @@
 {
   "appId": "org.capacitor.quasar.app",
-  "appName": "ttocttoc",
+  "appName": "홈조리원 똑똑",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www"
