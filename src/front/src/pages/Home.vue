@@ -71,7 +71,7 @@ export default {
   data() {
     return {
       userInfo: {
-        name: 'minjeong',
+        name: '고객',
         lasted_serviced: 8
       },
       LastedServiceStatus: {
@@ -133,8 +133,7 @@ export default {
     axios.get('/api/pxytst')
       .then(response => {
         console.log(response);
-        this.userInfo.name = response.data
-
+        this.userInfo.name = response.data;
       })
       .catch(function (error) {
         console.log(error);
