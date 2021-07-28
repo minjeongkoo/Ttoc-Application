@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>kr.co.ttoc</groupId>
-    <artifactId>ttoc-app</artifactId>
+    <artifactId>application</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ttoc-app</name>
+    <name>application</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -65,6 +65,8 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <!-- added -->
                 <configuration>
                     <excludes>
                         <exclude>
