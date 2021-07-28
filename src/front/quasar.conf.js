@@ -78,7 +78,7 @@ module.exports = configure(function (ctx) {
       proxy: {
         // proxy all requests starting with /api to jsonplaceholder
         '/api': {
-          target: 'http://localhost:9001',
+          target: 'http://13.125.170.87',
           changeOrigin: true
         }
       }
