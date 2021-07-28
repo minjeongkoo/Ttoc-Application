@@ -61,7 +61,7 @@
 </template>
 
 <script>
-// Componants
+import axios from "axios";
 import ServiceAboutSlide from "components/home/ServiceAboutSlide";
 
 export default {
@@ -128,6 +128,17 @@ export default {
         this.wellcomeMassage.longtimenosee = false;
       }
     }
+  },
+  mounted: function () {
+    axios.get('/api/pxytst')
+      .then(response => {
+        console.log(response);
+        this.userInfo.name = response.data
+
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 }
 
